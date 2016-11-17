@@ -25,7 +25,7 @@ Vagrant.configure(2) do |config|
     echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
     sudo apt-get -y install oracle-java8-installer
     
-    sudo apt-get install -y xfce4 virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+    sudo apt-get install -y xfce4 virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 git
     sudo apt-get install gnome-icon-theme-full tango-icon-theme
     sudo echo "allowed_users=anybody" > /etc/X11/Xwrapper.config
 
